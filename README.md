@@ -1,5 +1,3 @@
----
-
 # Transfer-Learning-based Cross-Stimulus Recognition Algorithm for SSVEP-BCI Systems
 
 This repository provides the **implementation and system code** for my MSc dissertation:
