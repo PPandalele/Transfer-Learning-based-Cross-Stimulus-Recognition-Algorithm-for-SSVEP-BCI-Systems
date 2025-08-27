@@ -145,7 +145,8 @@ The second video: demonstrates how to connect to the EEG device and acquire data
 * **Video**: 
 https://github.com/user-attachments/assets/5b5a30c6-165b-4197-8294-a5865514ac60
 
-https://github.com/user-attachments/assets/98fd7046-3439-41a2-a60b-61fb5e23f375
+* **Video**: 
+https://github.com/user-attachments/assets/754fa551-fd6b-477a-a09b-7de21b80345b
 
 ### 3. **Demo Mode**
 
