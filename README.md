@@ -113,39 +113,40 @@ For online test, ensure EEG hardware connection and correct COM settings.
 
 Large-scale validation was performed on **two public datasets**:
 
-* **Benchmark Dataset**: 40-target SSVEP dataset with **35 subjects**, 64-channel EEG, 6 blocks, frequency range **8–15.8 Hz (0.2 Hz step)**【Wang et al., 2017】.
-* **BETA Dataset**: Large-scale 40-target SSVEP dataset with **70 subjects**, 64-channel EEG, 4 blocks, real-world setting (outside shielded room), frequency range **8–15.8 Hz**【Liu et al., 2020】.
+* **Benchmark Dataset**: 40-target SSVEP dataset with **35 subjects**, 64-channel EEG, 6 blocks, frequency range **8–15.8 Hz (0.2 Hz step)** (Wang et al., 2017).
+* **BETA Dataset**: Large-scale 40-target SSVEP dataset with **70 subjects**, 64-channel EEG, 4 blocks, real-world setting (outside shielded room), frequency range **8–15.8 Hz** (Liu et al., 2020).
 
 On both datasets, **TLCCA (Transfer Learning-based CCA)** significantly improved:
 
 * **Recognition accuracy**
 * **Information Transfer Rate (ITR)**
 
-Detailed numerical results and figures are included in the dissertation.
+Detailed numerical results and figures are included in the dissertation (`modify_lele.docx`).
 
 ---
-🎥 GUI Demonstration Videos
 
- I provide demonstration videos for the three GUI modes implemented in this project.
-Videos should be placed in the repository under assets/videos/ (create the folder if it does not exist).
+## 🎥 GUI Demonstration Videos
 
-1. Beta Simulation Mode
+I provide demonstration videos for the three GUI modes implemented in this project.
+Videos should be placed in the repository under `assets/videos/` (create the folder if it does not exist).
 
-Description: Dataset-driven real-time recognition simulating the BETA dataset spelling task.
+### 1. **Beta Simulation Mode**
 
-Video: ▶️ Watch Beta Simulation Video
+* **Description**: Dataset-driven real-time recognition simulating the BETA dataset spelling task.
+* **Video**: [▶️ Watch Beta Simulation Video](assets/videos/beta_demo.mp4)
 
-2. Online Real-Time Mode
+### 2. **Online Real-Time Mode**
 
-Description: Connects to EEG device and performs live SSVEP recognition in real-time.
+* **Description**: Connects to EEG device and performs live SSVEP recognition in real-time.
+* **Video**: [▶️ Watch Online Mode Video](assets/videos/online_demo.mp4)
 
-Video: ▶️ Watch Online Mode Video
+### 3. **Demo Mode**
 
-3. Demo Mode
+* **Description**: Simplified single-window demonstration of the BCI speller system.
+* **Video**: [▶️ Watch Demo Mode Video](assets/videos/gui_demo.mp4)
 
-Description: Simplified single-window demonstration of the BCI speller system.
+---
 
-Video: ▶️ Watch Demo Mode Video
 ## 📖 Reference
 
 This implementation is based on the work of:
