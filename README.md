@@ -131,17 +131,27 @@ Videos should be placed in the repository under `assets/videos/` (create the fol
 ### 1. **Beta Simulation Mode**
 
 * **Description**: Dataset-driven real-time recognition simulating the BETA dataset spelling task.
-* **Video**: [▶️ Watch Beta Simulation Video](assets/videos/beta_demo.mp4)
+* **Video**: 
+
+https://github.com/user-attachments/assets/8819a012-9e7a-444f-974d-d3c422661885
+
+
 
 ### 2. **Online Real-Time Mode**
 
-* **Description**: Connects to EEG device and performs live SSVEP recognition in real-time.
-* **Video**: [▶️ Watch Online Mode Video](assets/videos/online_demo.mp4)
+* **Description**: Connects to EEG device and performs live SSVEP recognition in real-time. The first video: specifically demonstrates how to set the parameters.
+
+The second video: demonstrates how to connect to the EEG device and acquire data. .
+* **Video**: 
+https://github.com/user-attachments/assets/5b5a30c6-165b-4197-8294-a5865514ac60
+
+https://github.com/user-attachments/assets/98fd7046-3439-41a2-a60b-61fb5e23f375
 
 ### 3. **Demo Mode**
 
 * **Description**: Simplified single-window demonstration of the BCI speller system.
-* **Video**: [▶️ Watch Demo Mode Video](assets/videos/gui_demo.mp4)
+* **Video**: 
+https://github.com/user-attachments/assets/2d4ccdb9-a322-4cb9-a8ff-1391ef235332
 
 ---
 
