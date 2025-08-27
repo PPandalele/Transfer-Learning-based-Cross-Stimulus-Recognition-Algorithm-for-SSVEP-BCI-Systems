@@ -1,11 +1,9 @@
-好的，我已经结合你提供的论文内容和所有核心代码文件，整理了一份可以直接放到 GitHub 的 **详细 README.md**，包含标题、简介、功能说明、系统结构、使用方法和引用等，排版采用标准 Markdown（`#`、`##` 等）。你复制后直接作为 `README.md` 文件即可。
-
 ---
 
 # Transfer-Learning-based Cross-Stimulus Recognition Algorithm for SSVEP-BCI Systems
 
 This repository provides the **implementation and system code** for my MSc dissertation:
-**“Transfer Learning-based Cross-Stimulus Recognition Algorithm for SSVEP-BCI Systems” (The University of Manchester, 2023)**.
+**“Transfer Learning-based Cross-Stimulus Recognition Algorithm for SSVEP-BCI Systems”**.
 
 It includes:
 
@@ -19,15 +17,15 @@ It includes:
 
 * **Three GUI Modes (pygame-based)**
 
-  * **Beta simulation**: dataset-driven real-time recognition (with `simulation.py` / `gui.py`).
+  * **Beta simulation**: dataset-driven real-time recognition (`gui_bci.py` + `eeg_processor.py`).
   * **Online real-time**: connects to EEG device and performs live recognition (`gui_bci.py` + `eeg_processor.py`).
   * **Demo mode**: simplified single-window demo.
 
 * **TLCCA Real-Time Engine**
 
-  * Filter-bank analysis (coefficients follow $n^{-1.25}+0.25$)
-  * Standard SSVEP harmonics, adaptive time windows.
-  * Cross-stimulus transfer across different frequencies.
+  * Filter-bank analysis (coefficients follow \$n^{-1.25}+0.25\$)
+  * Standard SSVEP harmonics, adaptive time windows
+  * Cross-stimulus transfer across different frequencies
 
 * **Trainer & Extractor**
 
@@ -52,13 +50,10 @@ It includes:
 
 ```
 .
-├── gui.py              # GUI speller (with experimenter/participant dual interface)
-├── gui_bci.py          # GUI for BETA dataset & online test
-├── simulation.py       # GUI in simulation mode
+├── gui_bci.py          # GUI for three modes
 ├── eeg processor.py    # Real-time TLCCA recognition engine (for GUI mode)
 ├── try222.py           # CLI real-time recognition (no GUI)
 ├── extract block.py    # TLCCA trainer + test data extractor
-├── modify_lele.docx    # MSc dissertation (system description + experiments)
 ```
 
 ---
@@ -97,7 +92,7 @@ python try222.py
 ### 4. Run GUI System
 
 ```bash
-python gui.py
+python gui_bci.py
 ```
 
 Modes available:
@@ -116,16 +111,41 @@ For online test, ensure EEG hardware connection and correct COM settings.
 
 ## 📊 Experimental Results
 
-* Large-scale validation on **Benchmark (35 subjects)** and **BETA (70 subjects)**.
-* TLCCA achieved significant improvements in:
+Large-scale validation was performed on **two public datasets**:
 
-  * Recognition accuracy
-  * Information transfer rate (ITR)
+* **Benchmark Dataset**: 40-target SSVEP dataset with **35 subjects**, 64-channel EEG, 6 blocks, frequency range **8–15.8 Hz (0.2 Hz step)**【Wang et al., 2017】.
+* **BETA Dataset**: Large-scale 40-target SSVEP dataset with **70 subjects**, 64-channel EEG, 4 blocks, real-world setting (outside shielded room), frequency range **8–15.8 Hz**【Liu et al., 2020】.
 
-Detailed results and figures are in the dissertation (`modify_lele.docx`).
+On both datasets, **TLCCA (Transfer Learning-based CCA)** significantly improved:
+
+* **Recognition accuracy**
+* **Information Transfer Rate (ITR)**
+
+Detailed numerical results and figures are included in the dissertation.
 
 ---
+🎥 GUI Demonstration Videos
 
+ I provide demonstration videos for the three GUI modes implemented in this project.
+Videos should be placed in the repository under assets/videos/ (create the folder if it does not exist).
+
+1. Beta Simulation Mode
+
+Description: Dataset-driven real-time recognition simulating the BETA dataset spelling task.
+
+Video: ▶️ Watch Beta Simulation Video
+
+2. Online Real-Time Mode
+
+Description: Connects to EEG device and performs live SSVEP recognition in real-time.
+
+Video: ▶️ Watch Online Mode Video
+
+3. Demo Mode
+
+Description: Simplified single-window demonstration of the BCI speller system.
+
+Video: ▶️ Watch Demo Mode Video
 ## 📖 Reference
 
 This implementation is based on the work of:
@@ -143,18 +163,36 @@ This implementation is based on the work of:
 }
 ```
 
-Original reference code and materials:
+### Datasets
 
-* `E:\Dropbox\Disk\BCI competition 2019\ssvep-training-local-system-for-matlab\my\paper_ssvep_acc_dataset_transfer_als_20190930.m`
-* `E:\Dropbox\Disk\BCI competition 2019\ssvep-training-local-system-for-matlab\my\paper_data_transfer_result_20190930.xlsx`
+```bibtex
+@article{wang2017benchmark,
+  title={A benchmark dataset for SSVEP-based brain–computer interfaces},
+  author={Wang, Yijun and Chen, Xiaogang and Gao, Xiaorong and Gao, Shangkai},
+  journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering},
+  volume={25},
+  number={10},
+  pages={1746--1752},
+  year={2017},
+  publisher={IEEE}
+}
 
-Prepared by **Chi Man Wong** ([chiman465@gmail.com](mailto:chiman465@gmail.com)), Date: 22 June 2022.
+@article{liu2020beta,
+  title={BETA: A Large Benchmark Database Toward SSVEP-BCI Application},
+  author={Liu, Bingchuan and Huang, Xiaoshan and Wang, Yijun and Chen, Xiaogang and Gao, Xiaorong},
+  journal={Frontiers in Neuroscience},
+  volume={14},
+  pages={627},
+  year={2020},
+  publisher={Frontiers}
+}
+```
 
 ---
 
 ## 📌 Notes
 
-* If you use this code for academic publication, **please cite Wong et al. (2021)**.
+* If you use this code for academic publication, **please cite Wong et al. (2021)** and the relevant datasets (Wang et al., 2017; Liu et al., 2020).
 * This repository extends their work by:
 
   * Adding **GUI interfaces**
@@ -163,4 +201,3 @@ Prepared by **Chi Man Wong** ([chiman465@gmail.com](mailto:chiman465@gmail.com))
 
 ---
 
-要不要我帮你在 README 里加上 **运行示例截图（GUI界面和终端运行效果）** 的占位符？这样放到 GitHub 上会更直观。
