@@ -143,16 +143,29 @@ https://github.com/user-attachments/assets/8819a012-9e7a-444f-974d-d3c422661885
 
 The second video: demonstrates how to connect to the EEG device and acquire data. .
 * **Video**: 
-https://github.com/user-attachments/assets/5b5a30c6-165b-4197-8294-a5865514ac60
+
+
+https://github.com/user-attachments/assets/72312482-889b-48f7-a0aa-190ad1423e03
+
+
 
 * **Video**: 
-https://github.com/user-attachments/assets/754fa551-fd6b-477a-a09b-7de21b80345b
+
+
+https://github.com/user-attachments/assets/adc50a15-5ab7-43b3-8d75-2b73a13705c1
+
+
 
 ### 3. **Demo Mode**
 
 * **Description**: Simplified single-window demonstration of the BCI speller system.
-* **Video**: 
+* **Video**:
+
+  
 https://github.com/user-attachments/assets/2d4ccdb9-a322-4cb9-a8ff-1391ef235332
+
+
+
 
 ---
 
